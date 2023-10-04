@@ -16,7 +16,7 @@
 
 <body>
   <div class="container mt-5 p-5 rounded-4 bg-white">
-    <p class="text-center text-info fs-2 m-2 fontWeight">Tip Calculator</p>
+    <h6 class="text-center text-info fs-2 m-2 fontWeight">Tip Calculator</h6>
     <p class="text-center text-secondary">Follow Note:1.Enter your bill
       2.Enter people count
       3.Select tip %
@@ -24,7 +24,10 @@
     <div class="row">
       <!-- Left Box -->
       <div class="col fontWeight">
-        <p class="text-secondary">Bill</p>
+        <div class="d-flex justify-content-between">
+          <p class="text-secondary">Bill</p>
+          <p class="errorMsg text-danger me-3">enter a number</p>
+        </div>
         <!-- Bill Input -->
         <div class="input-group mb-3">
           <span class="input-group-text  border-0 inputSvg"><img src="images/icon-dollar.svg" alt="" srcset=""></span>

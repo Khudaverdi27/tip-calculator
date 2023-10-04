@@ -78,6 +78,7 @@ body {
     background-color: #1FC4AC;
 }
 
-.errorMessage {
+.errorMessage,
+.errorMsg {
     display: none;
 }
