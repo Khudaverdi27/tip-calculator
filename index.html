@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!--  Link Css-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container mt-5 p-5 rounded-4 bg-white">
+    <p class="text-center text-info fs-2 m-2 fontWeight">Tip Calculator</p>
+    <div class="row">
+      <!-- Left Box -->
+      <div class="col fontWeight">
+        <p class="text-secondary">Bill</p>
+        <!-- Bill Input -->
+        <div class="input-group mb-3">
+          <span class="input-group-text  border-0 inputSvg"><img src="images/icon-dollar.svg" alt="" srcset=""></span>
+          <input type="text" class=" inputBill form-control text-end me-3 fontWeight  fs-5 border-0  bg-body-tertiary"
+            placeholder="0">
+        </div>
+        <p class="text-secondary">Select Tip %</p>
+        <!-- percentage Buttons first line -->
+        <div class="grid d-flex text-center fs-5 text-white ">
+          <label class="tipDiv g-col-6 g-col-md-4 w-50 me-3 ">
+            <input name="plan" class="radio" type="radio" checked>
+            <div class="discount plan-details cursorPointer p-2  rounded bg-darkCyan">
+              5%</div>
+          </label>
+          <label class="tipDiv g-col-6 g-col-md-4 w-50 me-3">
+            <input name="plan" class="radio" type="radio" checked>
+            <div class="discount plan-details cursorPointer  p-2 rounded bg-darkCyan">
+              10%</div>
+          </label>
+          <label class="tipDiv g-col-6 g-col-md-4 w-50  me-3">
+            <input name="plan" class="radio" type="radio" checked>
+            <div class="discount plan-details  cursorPointer  p-2 rounded bg-darkCyan">
+              15%</div>
+          </label>
+        </div>
+        <!-- percentage Buttons second line -->
+        <div class="grid d-flex mt-3 text-center text-white  fs-5 rounded">
+          <label class="tipDiv g-col-6 g-col-md-4 w-50 me-3">
+            <input name="plan" class="radio" type="radio" checked>
+            <div class="discount plan-details  cursorPointer  p-2 rounded bg-darkCyan">
+              25%</div>
+          </label>
+          <label class="tipDiv g-col-12 g-col-md-4  w-50 me-3">
+            <input name="plan" class="radio" type="radio" checked>
+            <div class="discount plan-details  cursorPointer  p-2 rounded bg-darkCyan">
+              50%</div>
+          </label>
+          <label class=" g-col-6 g-col-md-4  me-3  ">
+            <input name="plan" class="radio" type="radio" checked>
+            <input type="text" class="inputCustom cursorPointer  p-2 rounded text-center fontWeight plan-details"
+              placeholder="Custom">
+          </label>
+        </div>
+        <div class="d-flex justify-content-between">
+          <p class="text-secondary mt-5">Number of People</p>
+          <p class="errorMessage text-danger mt-5 me-3">enter a number</p>
+        </div>
+        <!-- People Count input -->
+        <div class="input-group mb-3">
+          <span class="input-group-text  border-0"><img src="images/icon-person.svg" alt="" srcset=""></span>
+          <input type="text" class="inputPerson bg-body-tertiary form-control text-end me-3 fontWeight  fs-5 border-0 "
+            placeholder="0">
+        </div>
+      </div>
+      <!-- Right Box -->
+      <div class="col rightBox rounded-4 bg-darkCyan">
+        <div class="grid mt-4">
+          <!-- Right box Tip Amount line -->
+          <div class="d-flex p-3 text-white">
+            <div class=" g-col-6 w-100">
+              <p>Tip Amount</p>
+              <p class="textPerson text-secondary">/Person</p>
+            </div>
+            <div class=" g-col-6 w-100 fs-2 text-end fontWeight"><img src="images/icon-dollar - Kopya.svg"
+                class="svgHeight" alt=""><span class="colorLightBlue" id="tipAmount">0.00</span></div>
+          </div>
+          <!-- Right box Total Amount line -->
+          <div class="d-flex p-3 text-white">
+            <div class="g-col-6 w-100">
+              <p>Total</p>
+              <p class="textPerson text-secondary">/Person</p>
+            </div>
+            <div class=" g-col-6 w-100 fs-2 text-end fontWeight"><img src="images/icon-dollar - Kopya.svg"
+                class="svgHeight" alt=""><span class="colorLightBlue " id="totalPrice">0.00</span></div>
+          </div>
+        </div>
+        <!-- Reset Button -->
+        <div class="d-grid gap-2 col-11   mx-auto">
+          <button class="btn p-2  mt-5 btn-reset fontWeight fs-5 " type="button">RESET</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Javascript File-->
+  <script src="script.js"></script>
+</body>
+
+</html>
